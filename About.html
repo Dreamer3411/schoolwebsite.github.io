@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+</head>
+
+<style>
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px;
+}
+
+.container
+{
+    position: relative;
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 280px);
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow:  0 15px 35px rgba(255,255,255,0.05);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+header
+{
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    left: 20px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header ul
+{
+  display: flex;
+}
+
+header ul li
+{
+    list-style: none;
+    margin: 0 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+    padding: 8px 18px;
+    border-radius: 25px;
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+    background: skyblue;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+
+    
+.accordion-item
+{
+    width: 70%;
+    height: 50%;
+    background-color: lightblue;
+    border-radius: .4rem;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    padding: .1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,0.1);
+}
+
+.accordion-link
+{
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: rgba(2, 0, 10, 0.8);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.accordion-link i
+{
+    color: black;
+    padding: .2rem;
+}
+
+.accordion-link .ion-md-remove
+{
+    display: none;
+}
+
+.info
+{
+    max-height: 0;
+    color: black;
+    overflow: hidden;
+    position: relative;
+    font-family: sans-serif;
+    font-weight: 750;
+    font-size: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    transition: 650ms;
+}
+
+
+.accordion-item:target .info
+{
+    max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link .ion-md-add
+{
+    display: none;
+}
+.accordion-item:target .accordion-link .ion-md-remove
+{
+    display: block;
+}
+
+.limg img
+{
+    display: block;
+    width: 240px;
+    height: 290px;
+    border: 2px solid black;
+}
+.limg strong
+{
+    font-weight: 800;
+}
+
+</style>
+
+
+
+<body>
+    <section>
+    <div class="container">
+        <header>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html" class="active">About Us</a></li>
+                <li><a href="Addmission.html">Addmission</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+            
+        </header> 
+    
+
+        
+
+        <div class="accordion">
+            <div class="accordion-item" id="Generel-info">
+                <a class="accordion-link" href="#Generel-info">
+                    Generel-info
+                    <i class="icon ion-md-add"></i>
+                    <i class="icon ion-md-remove"></i>
+                </a>
+                <div class="info">
+                    St. Joseph High School is an English Medium School established and managed by 
+                    the Poona Diocesan Educational Society. It is recognized by the Government of Maharashtra 
+                    and comprises of ten standards, besides the pre-primary classes, and prepares pupils, primarily, 
+                    for the Secondary School Certificate (S.S.C.) Examination of the State of Maharashtra.
+                  <br><br>  St. Joseph High School is a Christian minority school which aims at giving an all-round education: academic, physical, 
+                    moral and spiritual - primarily to Catholics, for whose education the institution has been established and also 
+                    to other children irrespective of religion or race in so far as in consonant with Catholic principles.
+                    All subjects are taught through the medium of English, Marathi is taught from Std. I and Hindi is taught from Std. IV.
+                    The school is named after St. Joseph. Being the patron of the school, St. Joseph is a model of living for its staff and 
+                    students, for he was a just and wise man, who lived out his deep faith in God.
+                    It is a co-educational institution. The syllabus followed is that prescribed by the Department of Education, Maharashtra.
+                    <br><br>
+                    St. Joseph High School is a Christian minority school which aims at giving an all-round education: academic, physical, 
+                    moral and spiritual - primarily to Catholics, for whose education the institution has been established and also to other
+                    children irrespective of religion or race in so far as in consonant with Catholic principles
+                    <br><br>
+                    All subjects are taught through the medium of English, Marathi is taught from Std. I and Hindi is taught from Std. IV.
+                    <br><br>
+                    The school is named after St. Joseph. Being the patron of the school, St. Joseph is a model of living for its staff and 
+                    students, for he was a just and wise man, who lived out his deep faith in God.
+                    <br><br>
+                    It is a co-educational institution. The syllabus followed is that prescribed by the Department of Education, Maharashtra.
+                </div>
+            </div>
+            <br>
+            <div class="accordion-item" id="Generel-rules">
+                <a class="accordion-link" href="#Generel-rules">
+                    Generel-rules
+                    <i class="icon ion-md-add"></i>
+                    <i class="icon ion-md-remove"></i>
+                </a>
+                <div class="info">
+1] Catholic pupils are responsible to the School Authorities for the performance of their religious duties. Toppriority will be given to religious instruction and character formation.<br><br>
+2] Irregular attendance at school, habitual laziness, disobedience, dishonesty or conduct injurious to the moraltone of the school, within or without are sufficient reasons for the dismissal of a student.<br><br>
+3] Any damage done in class or in the school premises has to be made good. Pupils must take care of theequipment that has been lent for their use.<br><br>
+4] The school will not be responsible for the loss, damage or robbery of a pupil's belongings. It is not advisablefor pupils to bring money or valuable articles unnecessarily to school.<br><br>
+5] No collection for any purpose whatsoever will be made without the prior permission of the Principal.<br><br>
+6] No books ( other than text or school library books), newspapers or periodicals may be brought to the schoolwithout the Principal's permission.<br><br>
+7] No pupil is exempted from games and Physical Training without a medical certificate. The period of exemption should be specified.<br><br>
+8] Pupils are strictly forbidden to buy anything from street hawkers. No child should leave the school premisesduring the short recess.<br><br>
+9] No gift of any kind a teacher is allowed without the previous consent of the Principal.<br><br>
+10] The school uniform must be worn daily and the PT uniform on Mass PT days.<br><br>
+                </div>
+            </div>
+            <br>
+            <div class="accordion-item" id="Principal's permission">
+                <a class="accordion-link" href="#Principal's permission">
+                    Principal's permission
+                    <i class="icon ion-md-add"></i>
+                    <i class="icon ion-md-remove"></i>
+                </a>
+                <div class="info">
+                    The Principal's permission is required for following :<br><br>
+1] To make a collection for any purpose whatsoever.<br><br><br>
+2] To arrange for a party, picnic or meeting.<br><br><br>
+3] To join a sports meet or play in games not arranged by the school.<br><br><br>
+4] To give presents to teachers or to stage demonstrations in their honour.<br><br><br>
+5] To bring books, periodicals or newspapers into the school premises.<br><br><br>
+6] To impose fines.<br><br><br>
+7] To give or take tutions.<br><br><br>
+8] To send students out of school during class hours.<br><br><br>
+9] To join sports clubs or associations or to take part in matches or competitions organized by any association.<br><br><br>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+              
+            <div class="limg">
+                <strong>ST.JOSEPH HIGH SCHOOL</strong>
+                <img src="img/st.gif">
+                 </div>
+
+        
+        </section>
+</body>
+</html>

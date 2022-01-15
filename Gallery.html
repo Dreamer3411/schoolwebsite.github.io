@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+<style>
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+section
+{
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/bg5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px;
+}
+
+.container
+{
+    position: relative;
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 280px);
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow:  0 15px 35px rgba(255,255,255,0.05);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+header
+{
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    left: 20px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header ul
+{
+  display: flex;
+}
+
+header ul li
+{
+    list-style: none;
+    margin: 0 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+    padding: 8px 18px;
+    border-radius: 25px;
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+    background: skyblue;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.Container
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+.gallery
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    grid-gap: 10%;
+}
+
+.gallery img
+{
+    width: 100%;
+    height: 100%;
+    border: 2px solid grey;
+    border-radius: 10%;
+}
+
+
+
+</style>
+<body>
+    <section>
+        <div class="container">
+            <header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Addmission.html">Addmission</a></li>
+                    <li><a href="Gallery.html" class="active">Gallery</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                </ul>
+               </header> 
+               <div class="Gallery">
+                <div class="Container">
+                    <div class="gallery">
+                       <a href="img/g1.jpg" data-lightbox="models" data-title="caption1">
+                           <img src="img/g1.jpg">
+                       </a>
+                       <a href="img/g2.jpg" data-lightbox="models" data-title="caption2">
+                        <img src="img/g2.jpg">
+                    </a>
+                    <a href="img/g3.jpg" data-lightbox="models" data-title="caption3">
+                        <img src="img/g3.jpg">
+                    </a>
+                    <a href="img/g4.jpg" data-lightbox="models" data-title="caption4">
+                        <img src="img/g4.jpg">
+                    </a>
+                    <a href="img/g5.jpg" data-lightbox="models" data-title="caption5">
+                        <img src="img/g5.jpg">
+                    </a>
+                    <a href="img/g6.jpg" data-lightbox="models" data-title="caption6">
+                        <img src="img/g6.jpg">
+                    </a>
+                    <a href="img/g7.jpg" data-lightbox="models" data-title="caption7">
+                        <img src="img/g7.jpg">
+                    </a>
+                    <a href="img/g8.jpg" data-lightbox="models" data-title="caption8">
+                        <img src="img/g8.jpg">
+                    </a>
+                    <a href="img/g9.jpg" data-lightbox="models" data-title="caption9">
+                        <img src="img/g9.jpg">
+                    </a>
+                    </div>
+                    </div>
+            </div>
+            </div>
+                </section>
+                <script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>
